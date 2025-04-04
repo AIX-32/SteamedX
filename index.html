@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="Steamed X">
+    <meta name="description" content="Your ultimate place to get games for free!">
+    <title>Steamed X - Free games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="favicon" href="https://imghost.net/ib/AgbU6hTLGd5p2G4_1743612110.png">
+    
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <a href="/" aria-label="Steamed X Home">
+                    <span>Steamed X</span>
+                </a>
+            </div>
+            <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" class="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="active" aria-current="page">Games</a>
+                <a href="about.html">About</a>
+                <a href="/support.html">Support</a>
+            </div>
+            <div class="search-container">
+                <form role="search" id="searchForm">
+                    <input type="search" id="searchInput" placeholder="Search games..." aria-label="Search games">
+                    <button type="submit" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Amazing Games for free</h1>
+                <p>Play the latest and greatest games from indie developers and major studios for free.</p>
+                <button class="btn btn-primary btn-large">Browse All Games</button>
+            </div>
+        </section>
+
+        <section class="featured-games" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Games</h2>
+            <div class="featured-carousel" id="featuredGames">
+                <!-- Featured games will be loaded here -->
+            </div>
+        </section>
+
+        <section class="games-section" aria-labelledby="all-games-heading">
+            <h2 id="all-games-heading">All Games</h2>
+            <div class="games-container" id="gamesGrid">
+            </div>
+            <div class="pagination" id="pagination" aria-label="Pagination">
+            </div>
+        </section>
+    </main>
+
+    <aside id="gameModal" class="modal" aria-labelledby="gameModalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close">×</button>
+            <div id="gameModalContent">
+                <!-- Game details will be loaded here -->
+            </div>
+        </div>
+    </aside>
+
+    <script src="model.js"></script>
+    <script>
+        const featuredGames = [
+            "Grand Hike Free Download",
+            "Nelo Free Download (v0.1.4.0)",
+            "Constantine Free Download",
+            "Poly Roam Free Download (v2024.12.07)"
+        ];
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Steamed X - Learn more about your favorite gaming platform">
+    <title>About - Steamed X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <a href="/" aria-label="Steamed X Home">
+                    <span>Steamed X</span>
+                </a>
+            </div>
+            <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" class="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="/">Games</a>
+                <a href="/categories">Categories</a>
+                <a href="/about" class="active" aria-current="page">About</a>
+                <a href="/support">Support</a>
+            </div>
+            <div class="search-container">
+                <form role="search" id="searchForm">
+                    <input type="search" id="searchInput" placeholder="Search games..." aria-label="Search games">
+                    <button type="submit" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero about-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>About Steamed X</h1>
+                    <p>Your ultimate destination for free games</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-section">
+                    <h2>Our Mission</h2>
+                    <p>I believe that games should be accessible to everyone. creating a community where people that cant buy games finally get a chance.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Just to be sure</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Its not hard to setup.</h3>
+                            <p>Its just a click and download, then wait a bit.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fa fa-info"></i>
+                            <h3>Importent</h3>
+                            <p>Yes this is a reskin of steam unlocked.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Yes this is Safe</h3>
+                            <p>All games are verified and safe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Join Our Discord</h2>
+                    <p>For support and chat with others like you.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-large">Discord</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+            this.setAttribute('aria-expanded', 
+                this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
+            );
+        });
+    </script>
+</body>
+</html>

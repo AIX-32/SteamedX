@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steamed X Support - Get help and support for your gaming needs">
+    <title>Support - Steamed X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .btn {
+            padding: 0.6rem 1.2rem;
+            font-weight: 500;
+            border-radius: var(--border-radius-full);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-accent);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(157, 78, 221, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(157, 78, 221, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .btn-large {
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+        }
+
+        .header {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <a href="/" aria-label="Steamed X Home">
+                    <span>Steamed X</span>
+                </a>
+            </div>
+            <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" class="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="/">Games</a>
+                <a href="about.html">About</a>
+                <a href="/support.html" class="active" aria-current="page">Support</a>
+            </div>
+        </nav>
+    </header>
+
+
+<div id="container">
+    <h1 class="header">Join our Discord server for support</h1>
+    <a class="btn btn-primary btn-large" href="https://discord.gg/steamedx">Join</a> 
+</div>
+
+</body>
+</html>
